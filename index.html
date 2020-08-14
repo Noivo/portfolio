@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Noivo Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>Miguel Noivo</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+      <img
+        src="img/miguel.jpg"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- About me -->
+    <section class="about-me__section" id="about">
+      <section class="about-me">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+          Developer & Basketball Coach
+        </p>
+
+        <div class="about-me__body">
+          <p>
+            A Front End Developer with an extreme curiosity for learning,
+            self-improvement, honing my skills to become a better developer and
+            to give my contribution to make this world a better place.
+          </p>
+          <p>
+            Besides writing code, I love to teach basketball to young athletes.
+            I also enjoy reading and travelling around the world to know new
+            cultures, different ways of living and to see the world.
+          </p>
+        </div>
+
+        <img
+          src="img/MiguelNoivo.jpeg"
+          alt="Smiling in front of a tree"
+          class="about-me__img"
+        />
+      </section>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="project">
+      <h2 class="section__title section__title--work">Projects</h2>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <!-- <a href="portfolio-item.html" class="portfolio__item"> -->
+        <div class="portfolio__img">
+          <img
+            src="img/PersonalTrainer.png"
+            class="portfolio__img__img"
+            alt=""
+          />
+        </div>
+
+        <div class="portfolio__description">
+          <div class="portfolio__title">Personal Trainer</div>
+          <div class="portfolio__text">
+            With the aim of building a full stack project, Personal Trainer
+            becomes the perfect idea. This simple application allows to manage
+            the list of clients and their exercises. Through this project I
+            learned to work with the server and communicate with client-side.
+          </div>
+          <div class="portfolio__skills" id="skills">
+            <span class="portfolio__skill">ReactJS</span>
+            <span class="portfolio__skill">JavaScript</span>
+            <span class="portfolio__skill">HTML5</span>
+            <span class="portfolio__skill">CSS3</span>
+            <span class="portfolio__skill">Redux</span>
+            <span class="portfolio__skill">Express</span>
+          </div>
+          <div class="portfolio__buttons">
+            <a
+              href="https://personaltrainer-noivo.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Noivo/personalT"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div class="portfolio__img">
+          <img src="img/Weather.png" class="portfolio__img__img" alt="" />
+        </div>
+        <div class="portfolio__description">
+          <div class="portfolio__title">Weather App</div>
+          <div class="portfolio__text">
+            This project answer the request temperature of any city present in
+            the
+            <a
+              href="https://openweathermap.org/api"
+              target="_blank"
+              rel="noreferrer noopener"
+              >site</a
+            >. The main goal was connected to an external api for collect the
+            data and display for the user.
+          </div>
+          <div class="portfolio__skills" id="skills">
+            <span class="portfolio__skill">ReactJS</span>
+            <span class="portfolio__skill">JavaScript</span>
+            <span class="portfolio__skill">HTML5</span>
+            <span class="portfolio__skill">CSS3</span>
+          </div>
+          <div class="portfolio__buttons">
+            <a
+              href="http://weather-miguel-noivo.netlify.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Noivo/WeatherApp"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Source Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:jmnoivo@gmail.com" class="footer__link"
+        >jmnoivo@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item social-list__CV">
+          <a
+            class="social-list__link"
+            href="./img/MiguelNoivo_CV.pdf"
+            download
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span>CV</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/miguel-noivo-5955661a4/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/Noivo"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -160,7 +160,7 @@ header {
 .nav__link {
   position: relative;
   text-decoration: none;
-  color: var(--clr-accent);
+  color: var(--clr-dark);
 }
 
 @media (min-width: 600px) {
@@ -354,6 +354,7 @@ header {
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px + 4em);
+    color: var(--clr-dark);
   }
 
   .about-me__img {
@@ -449,11 +450,11 @@ header {
   transition: all 0.15s ease;
   box-sizing: border-box;
   background: var(--clr-accent);
-  color: #fff;
+  color: var(--clr-dark);
 }
 
 .portfolio__buttons a:hover {
-  background: #16e0cf;
+  opacity: 0.8;
   transform: translateY(-1px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
